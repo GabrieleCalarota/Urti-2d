@@ -1,0 +1,12 @@
+set terminal gif animate delay 1
+set output 'animate-2d.gif'
+stats 'Output.txt' nooutput
+set xrange[-20:20]
+set yrange[-20:20]
+#set autoscale
+
+#con AUTOSCALE PS =R*3.5, con xrange,yrange PS = R*4
+
+do for [i=1:int(STATS_blocks)] {
+    plot 'Output.txt' index (i-1) using 1:2:5:6 w p pt 7 ps variable palette notitle
+}
