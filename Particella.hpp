@@ -1,6 +1,6 @@
 #ifndef PARTICELLA_HPP_
 #define PARTICELLA_HPP_
-#include "Mylibrary.hpp"
+#include "MyLibrary.hpp"
 
 class Particella{
  protected:

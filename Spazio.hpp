@@ -1,6 +1,6 @@
 #ifndef SPAZIO_HPP_
 #define SPAZIO_HPP_
-#include "Mylibrary.hpp"
+#include "MyLibrary.hpp"
 class Particella;
 
 struct Vec{ Particella* p;};
